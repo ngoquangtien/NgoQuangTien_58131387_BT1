@@ -4,13 +4,13 @@
  * and open the template in the editor.
  */
 package BT1;
-import BT1.Canhan;
+
+import java.util.ArrayList;
+
 /**
  *
  * @author quang
  */
-public interface IQLDS {
-    public int them(Canhan p);
-    public int xoa(String ten);
-    public void inDS();
+public class LopHoc {
+    
 }
