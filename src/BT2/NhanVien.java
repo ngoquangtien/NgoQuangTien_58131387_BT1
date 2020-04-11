@@ -67,7 +67,7 @@ public class NhanVien {
         this.sumGioLam = sumGioLam;
     }
     
-    public String getThongTin(){
+    public String ToString(){
         return ten+" "+tuoi+" "+diaChi+" "+tienLuong+" "+sumGioLam;
     };
     public double tinhThuong(int s){

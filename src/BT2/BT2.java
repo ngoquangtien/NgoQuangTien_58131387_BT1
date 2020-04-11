@@ -22,7 +22,7 @@ public class BT2 {
         nhanvien.diaChi="K7";
         nhanvien.tienLuong=100.000;
         nhanvien.sumGioLam=210;
-        System.out.println("nhan vien "+nhanvien.getThongTin());
+        System.out.println("nhan vien "+nhanvien.ToString());
         //tinhThuong(sumGioLam);
     }
 
