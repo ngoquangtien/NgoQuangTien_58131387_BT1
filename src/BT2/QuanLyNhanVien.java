@@ -5,20 +5,14 @@
  */
 package BT2;
 
-import BT2.IQuanLy;
-import BT2.NhanVien;
 import java.util.ArrayList;
 
 /**
  *
  * @author quang
  */
-public class QuanLyNhanVien implements IQuanLy{
-    ArrayList<NhanVien> dsnhanvien;
-
-    public QuanLyNhanVien(ArrayList<NhanVien> dsnhanvien) {
-        this.dsnhanvien = dsnhanvien;
-    }
+public class QuanLyNhanVien implements IQuanLy {
+    ArrayList<NhanVien> dsnhanvien= new ArrayList();
 
     @Override
     public void them(NhanVien nv) {
@@ -27,7 +21,8 @@ public class QuanLyNhanVien implements IQuanLy{
 
     @Override
     public void inDS() {
-        System.out.println("nhan vien"+dsnhanvien);
+        for(int i = 0;i < dsnhanvien.size(); i++)
+        System.out.println(dsnhanvien.get(i).toString());
     }
 
     

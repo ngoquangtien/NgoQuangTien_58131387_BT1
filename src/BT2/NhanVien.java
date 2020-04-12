@@ -26,7 +26,25 @@ public class NhanVien {
         this.tienLuong = tienLuong;
         this.sumGioLam = sumGioLam;
     }
+    public void getThongTin(){
+        System.out.println(toString());
+    };
 
+    @Override
+    public String toString() {
+        return "NhanVien{" + "ten=" + ten + ", tuoi=" + tuoi + ", diaChi=" + diaChi + ", tienLuong=" + tienLuong + ", sumGioLam=" + sumGioLam + '}';
+    }
+    
+    public double tinhThuong(int s){
+        double thuong = 0;
+        if(s >= 200)
+           thuong=tienLuong*0.2;
+        if(s<200 && s>=100)
+           thuong=tienLuong*0.1;
+        if(s<100)
+            thuong=0;
+        return thuong;
+    };
     public String getTen() {
         return ten;
     }
@@ -67,17 +85,5 @@ public class NhanVien {
         this.sumGioLam = sumGioLam;
     }
     
-    public String ToString(){
-        return ten+" "+tuoi+" "+diaChi+" "+tienLuong+" "+sumGioLam;
-    };
-    public double tinhThuong(int s){
-        double thuong = 0;
-        if(s >= 200)
-           thuong=tienLuong*20/100;
-        if(s<200 && s>=100)
-           thuong=tienLuong*10/100;
-        if(s<100)
-            thuong=0;
-        return thuong;
-    };
+    
 }
